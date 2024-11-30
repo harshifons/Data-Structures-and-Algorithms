@@ -1,0 +1,28 @@
+# Linear Search Algorithm
+
+Explanation:
+Linear Search works by checking every element of the list one by one until it finds the target value or reaches the end of the list.
+
+Steps:
+1. Start at the beginning of the list.
+2. Check each element, one by one.
+3. If the element matches the target value, return the index.
+4. If the element doesn’t match and we reach the end of the list, return -1 (or some indication that the element isn’t found).
+
+Time Complexity:
+Worst-case and average time complexity: O(n), where n is the number of elements in the list.
+Best case: O(1), if the first element matches the target.
+
+How it works:
+1. We define the function linear_search(arr, target) where arr is the list to search, and target is the value we are looking for.
+2. The for loop iterates through each element in the array.
+3. If the element at index i matches the target, we return that index.
+4. If no match is found after going through the list, we return -1.
+
+For example,
+For the input list arr = [23, 45, 34, 67, 31] and target = 67, the output would be:
+Target 67 is at the position 3.
+
+If the target was not in the list (for example, target = 50), the output would be:
+Target 50 not found.
+
