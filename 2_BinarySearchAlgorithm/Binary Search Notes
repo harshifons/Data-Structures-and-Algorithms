@@ -1,0 +1,41 @@
+** Binary Search Algorithm **
+
+Explanation:
+Binary Search is a more efficient searching algorithm than Linear Search, but it only works on sorted arrays. The idea is to divide the search interval in half repeatedly, which greatly reduces the number of comparisons.
+
+Steps:
+1.	Start with the entire array.
+2.	Find the middle element.
+3.	If the middle element is equal to the target, return the index.
+4.	If the target is smaller than the middle element, repeat the search on the left half.
+5.	If the target is larger than the middle element, repeat the search on the right half.
+6.	If the search interval becomes empty (left index exceeds right index), return -1 (indicating that the target is not found).
+
+Time Complexity:
+Worst-case time complexity: O(log n), where n is the number of elements in the list. This makes Binary Search much faster than Linear Search for large datasets.
+Best case: O(1), when the target is found at the middle.
+
+How it works:
+
+1.	Initial Setup: We define two pointers, left (starting at the first element) and right (starting at the last element).
+
+2.	While Loop: The loop continues as long as left is less than or equal to right.
+Find Middle: Calculate the middle index with (left + right) // 2.
+Compare Middle: If the middle element matches the target, return the index.
+If the target is smaller than the middle element, we narrow our search to the left half (right = mid – 1).
+If the target is larger, we search the right half (left = mid + 1).
+
+3.	If no match is found, we return -1.
+
+For example, 
+For the input list arr = [23, 45, 34, 67, 31, 78, 90] and target = 78, the output would be:
+Target 78 is at the index 5
+
+If the target was not in the list (for example, target = 100), the output would be:
+Target 100 not found.
+
+
+Important Notes:
+Sorted Data - The array must be sorted for Binary Search to work correctly.
+Efficiency - Binary Search is much faster than Linear Search, especially for large datasets.
+
