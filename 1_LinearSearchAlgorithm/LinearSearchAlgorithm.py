@@ -7,9 +7,9 @@ def linear_search(arr, target):
 arr = [23, 45, 34, 67, 31]
 target = 67
 
-position = linear_search(arr, target)
+index = linear_search(arr, target)
 
-if position != -1:
-    print(f"Target {target} is at the position {position}")
+if index != -1:
+    print(f"Target {target} is at the index {index}")
 else:
     print(f"Target {target} not found.")
